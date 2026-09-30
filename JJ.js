@@ -4,7 +4,7 @@ const albums = [
     {
         title: "songs",
         artist: "Adrienne Lenker",
-        genre: ["acoustic", "folk"],
+        genre: "folk",
         length: 39,
         picture: src="JukeboxJumble/jjpictures/songs.png",
         alttext: "watercolored flowers with vibrant colors",
@@ -290,3 +290,10 @@ const albums = [
         alttext: "A dark gray background with a hand extending from it holding a red flower.",
     }
 ]
+
+//sorting them by genre
+let movies.find(sortGenre);
+
+function sortGenre(genre.pop) {
+  console.log = movies.title;
+}

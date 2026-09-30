@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Mochi;
+    size-adjust: 275%;
+    src: url(TMT-MiniMochi-Sweet.woff2);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px;
+    column-gap: 10px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+        
+        
+button {
+    background-color: rgb(249, 92, 204);
+    color: white;
+    font-family: Monaco, sans serif;
+    font-size: 15px;
+    padding: 15px 15px;
+    border-color: rgb(126, 6, 92);
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+body {
+  background-image: radial-gradient(circle, rgb(29, 18, 54), black);
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h1 {
+    font-family: Mochi, Monaco; 
+    font-size: 800 px;
+    color: rgb(142, 242, 84);
+    line-height: 1.2;
+    letter-spacing: .8%;
+    margin-bottom: 75px;
+}
+
+h2 {
+    color: rgb(204, 35, 255);
+    font-family: Verdana;
+    font-size: 75px;
+}
+
+p {
+    font-family:Verdana;
+    font-size: 20px;
+    color: white;
+}
+
+ul {
+  color: white;
+  line-height: 10px;
+}
