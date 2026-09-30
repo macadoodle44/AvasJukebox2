@@ -7,7 +7,7 @@ const albums = [
     {
         title: "songs",
         artist: "Adrienne Lenker",
-        genre: "folk",
+        genre: ["folk"],
         length: 39,
         picture: src="jjpictures/songs.png",
         alttext: "watercolored flowers with vibrant colors",
@@ -298,6 +298,18 @@ const albums = [
 
 for(let i = 0; i < albums.length; i++) {
     let album = albums[i]
+    makeAlbum(album)
+    // let newAlbum = document.createElement("div")
+    // newAlbum.innerHTML = `
+    //  <img src=${album.picture} alt=${album.alttext}>
+    //  <h3>${album.title}</h3>
+    //  <p>${album.artist}</p>
+    //  <br>
+    // `
+    // document.querySelector(".albums").appendChild(newAlbum)
+}
+
+function makeAlbum(album) {
     let newAlbum = document.createElement("div")
     newAlbum.innerHTML = `
      <img src=${album.picture} alt=${album.alttext}>
@@ -309,3 +321,60 @@ for(let i = 0; i < albums.length; i++) {
 }
 
 //sorting by genre with buttons
+
+//folk
+document.getElementById("folk").addEventListener("click", function(){
+    document.querySelector(".albums").innerHTML = ""
+    for(let i = 0; i < albums.length; i++) {
+        let album = albums[i]
+        if (album.genre.includes("folk")) {
+            makeAlbum(album)
+        }
+    }
+})
+
+//rock
+document.getElementById("rock").addEventListener("click", function(){
+    document.querySelector(".albums").innerHTML = ""
+    for(let i = 0; i < albums.length; i++) {
+        let album = albums[i]
+        if (album.genre.includes("rock")) {
+            makeAlbum(album)
+        }
+    }
+})
+
+//pop
+document.getElementById("pop").addEventListener("click", function(){
+    document.querySelector(".albums").innerHTML = ""
+    for(let i = 0; i < albums.length; i++) {
+        let album = albums[i]
+        if (album.genre.includes("pop")) {
+            makeAlbum(album)
+        }
+    }
+})
+
+//jazz
+document.getElementById("jazz").addEventListener("click", function(){
+    document.querySelector(".albums").innerHTML = ""
+    for(let i = 0; i < albums.length; i++) {
+        let album = albums[i]
+        if (album.genre.includes("jazz")) {
+            makeAlbum(album)
+        }
+    }
+})
+
+//soundtrack
+document.getElementById("soundtrack").addEventListener("click", function(){
+    document.querySelector(".albums").innerHTML = ""
+    for(let i = 0; i < albums.length; i++) {
+        let album = albums[i]
+        if (album.genre.includes("soundtrack")) {
+            makeAlbum(album)
+        }
+    }
+})
+
+//jumble

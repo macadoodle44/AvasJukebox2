@@ -8,18 +8,19 @@
 </head>
 
 <body>
-
+    <button></button>
     <h1>Jukebox Jumble</h1>
-    <p>Click a button to search albums by genre.</p>
+    <p>Click a button to search albums by genre or click the JUMBLE button for a random selection.</p>
         <div class="container">
-            <button id="folk">FOLK</button>
-            <button id="rock">ROCK</button>
-            <button id="pop">POP</button>
-            <button id="jazz">JAZZ</button>
-            <button id="soundtrack">SOUNDTRACK</button>
+            <button id="folk" data-genre="folk">FOLK</button>
+            <button id="rock" data-genre="rock">ROCK</button>
+            <button id="pop" data-genre="pop">POP</button>
+            <button id="jazz" data-genre="jazz">JAZZ</button>
+            <button id="soundtrack" data-genre="soundtrack">SOUNDTRACK</button>
+            <button class="jumble">J umBl E!</button>
         </div>
     <br>
-    <div class="albums">
+    <div class="albums container">
     </div>
 
     <script src="JJ.js"></script>

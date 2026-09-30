@@ -28,6 +28,12 @@ img {
     
 /* buttons and button effects */
 
+button.jumble {
+    background-color: rgb(142, 242, 84);
+    border-color: rgb(28, 62, 9);
+    color: black;
+}
+
 button {
     background-color: rgb(249, 92, 204);
     color: white;
@@ -49,6 +55,7 @@ button:hover {
     border-radius: 30px;
     margin-right: 10px;
 }
+
 
 /* background */
 
@@ -81,7 +88,7 @@ h3 {
     color: rgb(255, 212, 20);
     font-family: Verdana;
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 p {
