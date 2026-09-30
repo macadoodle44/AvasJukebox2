@@ -1,8 +1,12 @@
+/* creating custom font */
+
 @font-face {
     font-family: Mochi;
     size-adjust: 275%;
     src: url(TMT-MiniMochi-Sweet.woff2);
 }
+
+/* groups or object styling */
 
 .container {
     display: grid;
@@ -11,16 +15,19 @@
     column-gap: 10px;
     row-gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
 img {
+    height: 150px;
     border-radius: 2px;
     padding: 10px;
-    filter: drop-shadow(10px 10px 7px rgb(64, 40, 120)); 
+    filter: drop-shadow(5px 5px 10px rgb(64, 40, 120)); 
+    color: white;
 }
-       
-        
+    
+/* buttons and button effects */
+
 button {
     background-color: rgb(249, 92, 204);
     color: white;
@@ -32,19 +39,34 @@ button {
     margin-right: 10px;
 }
 
+button:hover {
+    background-color: rgb(204, 35, 255);
+    color: white;
+    border-color: rgb(66, 11, 83);
+    font-family: Monaco, sans serif;
+    font-size: 15px;
+    padding: 15px 15px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+/* background */
+
 body {
-  background-image: radial-gradient(circle, rgb(29, 18, 54), black);
+  background-image: radial-gradient(circle, rgb(31, 19, 58), black);
   margin-top: 5%;
   margin-bottom: 10%;
   margin-left: 10%;
   margin-right: 10%;
 }
 
+/* Text styling */
+
 h1 {
     font-family: Mochi, Monaco; 
     font-size: 800 px;
     color: rgb(142, 242, 84);
-    line-height: 1.2;
+    line-height: 2.5;
     letter-spacing: .8%;
     margin-bottom: 75px;
 }
@@ -53,6 +75,13 @@ h2 {
     color: rgb(204, 35, 255);
     font-family: Verdana;
     font-size: 75px;
+}
+
+h3 {
+    color: rgb(255, 212, 20);
+    font-family: Verdana;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -65,3 +94,17 @@ ul {
   color: white;
   line-height: 10px;
 }
+
+
+/* link styles */
+    link {
+        font-family: Verdana;
+        font-size: 15px;
+        color: white;
+    }
+
+    link:visited {
+        font-family: Verdana;
+        font-size: 15px;
+        color: white;
+    }
