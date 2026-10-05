@@ -25,6 +25,14 @@ img {
     filter: drop-shadow(5px 5px 10px rgb(64, 40, 120)); 
     color: white;
 }
+
+img:hover {
+    height: 150px;
+    border-radius: 2px;
+    padding: 10px;
+    filter: drop-shadow(15px 15px 10px rgb(64, 40, 120)); 
+    color: white;
+}
     
 /* buttons and button effects */
 
